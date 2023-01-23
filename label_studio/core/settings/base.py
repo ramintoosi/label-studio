@@ -406,7 +406,7 @@ EXPORT_DIR = os.path.join(BASE_DATA_DIR, 'export')
 EXPORT_URL_ROOT = '/export/'
 EXPORT_MIXIN = 'data_export.mixins.ExportMixin'
 # old export dir
-os.makedirs(EXPORT_DIR, exist_ok=True)
+# os.makedirs(EXPORT_DIR, exist_ok=True)
 # dir for delayed export
 DELAYED_EXPORT_DIR = 'export'
 os.makedirs(os.path.join(BASE_DATA_DIR, MEDIA_ROOT, DELAYED_EXPORT_DIR), exist_ok=True)
