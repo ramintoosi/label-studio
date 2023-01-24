@@ -186,14 +186,14 @@ export const Menubar = ({
             >
               <Menu>
                 <Menu.Item
-                  label="Projects"
+                  label="پروژه ها"
                   to="/projects"
                   icon={<IconFolder/>}
                   data-external
                   exact
                 />
                 <Menu.Item
-                  label="Organization"
+                  label="سازمان"
                   to="/organization"
                   icon={<IconPersonInCircle/>}
                   data-external

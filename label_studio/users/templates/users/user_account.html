@@ -27,22 +27,22 @@
     <form action="{% url 'user-detail' pk=user.pk %}" method="patch" class="user__info">
       <input type="hidden" name="_method" value="patch"/>
 
-      <header>Account info</header>
+      <header>اطلاعات اکانت</header>
       <ul>
         <li class="field">
-          <label for="">E-mail</label>
+          <label for="">ایمیل</label>
           <input type="text" class="ls-input" value="{{user.email}}" disabled />
         </li>
         <li class="field">
-          <label for="">First Name</label>
+          <label for="">نام</label>
           <input type="text" class="ls-input" name="first_name" value="{{user.first_name}}" />
         </li>
         <li class="field">
-          <label for="">Last Name</label>
+          <label for="">نام خانوادگی</label>
           <input type="text" class="ls-input" name="last_name" value="{{user.last_name}}" />
         </li>
         <li class="field">
-          <label for="">Phone</label>
+          <label for="">شماره همراه</label>
           <input type="text" class="ls-input" name="phone" value="{{user.phone}}" />
           <!-- <span>We'll send you sms with code if you change your number</span>
           <span class="error">Incorrect phone number!</span> -->
@@ -64,7 +64,7 @@
           </div>
 
           <button class="ls-button ls-button_look_danger" name="delete-avatar" type="button">
-            Delete
+            حذف
           </button>
 
           <input class="file-input" type="file" name="avatar" value="Choose"
@@ -77,25 +77,25 @@
         </div> -->
       </div>
       <footer>
-        <p class="secondary">Registered {{ user.date_joined|date:"M j, Y" }}, user ID {{ user.id }}</p>
-        <button class="ls-button ls-button_look_primary" onclick="smart_submit()">Save</button>
+        <p class="secondary">ثبت نام انجام شد {{ user.date_joined|date:"M j, Y" }}, شناسه {{ user.id }}</p>
+        <button class="ls-button ls-button_look_primary" onclick="smart_submit()">دخیره</button>
       </footer>
     </form>
 
     <!-- Token -->
     <form action="" class="access_token__info">
-      <header>Access Token</header>
+      <header>توکن دسترسی</header>
       <div class="field field--wide">
-        <label for="access_token">Use this token to authenticate with our API:</label>
+        <label for="access_token">از این توکن جهت اعتبار سنجی API استفاده کنید:</label>
         <input id="access_token" class="ls-input" name="access_token" type="text" value="{{token}}" readonly />
         <p class="actions">
-          <button type="button" class="blinking-status ls-button" data-copy="access_token">Copy</button>
-          <button type="button" class="blinking-status ls-button" name="renew">Renew</button>
+          <button type="button" class="blinking-status ls-button" data-copy="access_token">کپی</button>
+          <button type="button" class="blinking-status ls-button" name="renew">جدید</button>
         </p>
       </div>
       <!-- Example -->
       <div class="field field--wide">
-        <label for="example_fetch">Example fetch projects data:</label>
+        <label for="example_fetch">مثال فراخوانی دیتای پروژه:</label>
         <textarea id="example_fetch" class="example_code ls-textarea" type="text" readonly
                   style="height: 92px; font-size: 14px">
           {% if settings.HOSTNAME %}
@@ -105,8 +105,8 @@
           {% endif %}
         </textarea>
         <p class="actions">
-          <button type="button" class="blinking-status ls-button" data-copy="example_fetch">Copy</button>
-          <a class="ls-button" href="https://labelstud.io/guide/api.html" target="_blank">Documentation</a>
+          <button type="button" class="blinking-status ls-button" data-copy="example_fetch">کپی</button>
+          <a class="ls-button" href="https://labelstud.io/guide/api.html" target="_blank">مستندات</a>
         </p>
       </div>
     </form>
@@ -117,7 +117,7 @@
       <header>
         {{ user.active_organization.title }}
         <br>
-        <sub style="font-size: 16px; margin-top: 0; color: rgba(0,0,0,0.2); ">Your active organization</sub>
+        <sub style="font-size: 16px; margin-top: 0; color: rgba(0,0,0,0.2); ">سازمان فعال شما</sub>
       </header>
 
       <table>
