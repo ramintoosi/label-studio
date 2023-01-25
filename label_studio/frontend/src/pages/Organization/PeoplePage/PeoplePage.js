@@ -24,7 +24,7 @@ const InvitationModal = ({ link }) => {
       />
 
       <Description style={{ width: '70%', marginTop: 16 }}>
-        Invite people to join your Label Studio instance. People that you invite have full access to all of your projects. <a href="https://labelstud.io/guide/signup.html">Learn more</a>.
+        دیگران را به label studio دعوت کنید. افرادی که دعوت می‌شوند دسترسی کامل به پروژه های شما دارند. <a href="https://labelstud.io/guide/signup.html">اطلاعات بیشتر</a>.
       </Description>
     </Block>
   );
@@ -80,7 +80,7 @@ export const PeoplePage = () => {
           </Space>
           <Space>
             <Button primary style={{ width: 170 }} onClick={copyLink}>
-              {copied ? "Copied!" : "Copy link"}
+              {copied ? "کپی شد!" : "Copy link"}
             </Button>
           </Space>
         </Space>
@@ -115,7 +115,7 @@ export const PeoplePage = () => {
 
           <Space>
             <Button icon={<LsPlus/>} primary onClick={showInvitationModal}>
-              Add People
+              افزودن اشخاص
             </Button>
           </Space>
         </Space>

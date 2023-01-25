@@ -14,11 +14,11 @@ let apiLocked = false;
 
 const errorFormatter = (result) => {
   const {response} = result;
-  const isShutdown = String(response?.detail ?? result?.error) === 'Failed to fetch';
+  const isShutdown = String(response?.detail ?? result?.error) === 'واکشی نشد';
 
   return {
     isShutdown,
-    title: result.error ? "Runtime error" : "Server error",
+    title: result.error ? "خطا در زمان اجرا" : "خطای سرور",
     message: response?.detail ?? result?.error,
     stacktrace: response?.exc_info ?? null,
     version: response?.version,
@@ -47,8 +47,8 @@ const handleError = async (response, showModal = true) => {
       body: isShutdown ? (
         <ErrorWrapper
           possum={false}
-          title={"Connection refused"}
-          message={"Server not responding. Is it still running?"}
+          title={"ارتباط رد شد"}
+          message={"سرور پاسخگو نیست. آیا هنوز در حال اجراست?"}
         />
       ) : (
         <ErrorWrapper {...formattedError}/>

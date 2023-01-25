@@ -57,7 +57,7 @@ export const FormField = forwardRef(({
       dep.field.addEventListener('change', handler);
       field = dep.field;
     } else {
-      console.warn(`Dependency field not found ${dependency}`);
+      console.warn(`فیلد وابسته یافت نشد ${dependency}`);
     }
 
     setDependencyField(field);

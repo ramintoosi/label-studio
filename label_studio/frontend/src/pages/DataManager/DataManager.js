@@ -169,10 +169,10 @@ export const DataManagerPage = ({ ...props }) => {
 
   return crashed ? (
     <Block name="crash">
-      <Elem name="info">Project was deleted or not yet created</Elem>
+      <Elem name="info">پروژه حذف شده یا هنوز ایجاد نشده</Elem>
 
       <Button to="/projects">
-        Back to projects
+        بازگشت به پروژه ها
       </Button>
     </Block>
   ) : (
@@ -209,7 +209,7 @@ DataManagerPage.context = ({ dmRef }) => {
       });
       addCrumb({
         key: "dm-crumb",
-        title: "Labeling",
+        title: "برچسب زنی",
       });
     }
   };
@@ -220,7 +220,7 @@ DataManagerPage.context = ({ dmRef }) => {
 
     if (isLabelStream && show_instruction && expert_instruction) {
       modal({
-        title: "Labeling Instructions",
+        title: "دستور العمل برچسب زنی",
         body: <div dangerouslySetInnerHTML={{ __html: expert_instruction }}/>,
         style: { width: 680 },
       });
@@ -248,11 +248,11 @@ DataManagerPage.context = ({ dmRef }) => {
       {(project.expert_instruction && mode !== 'explorer') && (
         <Button size="compact" onClick={() => {
           modal({
-            title: "Instructions",
+            title: "دستور العمل ها",
             body: () => <div dangerouslySetInnerHTML={{ __html: project.expert_instruction }}/>,
           });
         }}>
-          Instructions
+          دستور العمل ها
         </Button>
       )}
 

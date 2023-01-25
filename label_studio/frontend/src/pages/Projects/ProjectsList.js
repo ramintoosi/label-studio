@@ -18,7 +18,7 @@ export const ProjectsList = ({ projects, currentPage, totalItems, loadNextPage, 
       <Elem name="pages">
         <Pagination
           name="projects-list"
-          label="Projects"
+          label="پروژه‌ها"
           page={currentPage}
           totalItems={totalItems}
           urlParamName="page"
@@ -35,9 +35,9 @@ export const EmptyProjectsList = ({ openModal }) => {
   return (
     <Block name="empty-projects-page">
       <Elem name="heidi" tag="img" src={absoluteURL("/static/images/opossum_looking.png")} />
-      <Elem name="header" tag="h1">Heidi doesn’t see any projects here</Elem>
-      <p>Create one and start labeling your data</p>
-      <Elem name="action" tag={Button} onClick={openModal} look="primary">Create Project</Elem>
+      <Elem name="header" tag="h1">هیچ پروژه ای وجود ندارد</Elem>
+      <p>یک پروژه ایجاد و شروع به برچسب‌گذاری دیتای خود کنید</p>
+      <Elem name="action" tag={Button} onClick={openModal} look="primary">ایجاد پروژه</Elem>
     </Block>
   );
 };
@@ -69,8 +69,8 @@ const ProjectCard = ({ project }) => {
             }}>
               <Dropdown.Trigger content={(
                 <Menu>
-                  <Menu.Item href={`/projects/${project.id}/settings`}>Settings</Menu.Item>
-                  <Menu.Item href={`/projects/${project.id}/data?labeling=1`}>Label</Menu.Item>
+                  <Menu.Item href={`/projects/${project.id}/settings`}>تنظیمات</Menu.Item>
+                  <Menu.Item href={`/projects/${project.id}/data?labeling=1`}>برچسب</Menu.Item>
                 </Menu>
               )}>
                 <Button size="small" type="text" icon={<LsEllipsis/>}/>

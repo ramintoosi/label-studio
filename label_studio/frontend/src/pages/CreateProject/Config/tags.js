@@ -3,7 +3,7 @@ const OBJECTS = {
     type: 'Image',
     settings: {
       strokeWidth: {
-        title: 'Width of region borders',
+        title: 'عرض مرزهای منطقه',
         type: Number,
         param: ($obj, value) => $obj.$controls.forEach($control => $control.setAttribute('strokeWidth', value)),
         value: $obj => $obj.$controls[0]?.getAttribute('strokeWidth') ?? 1,
@@ -29,7 +29,7 @@ const OBJECTS = {
     type: 'Text',
     settings: {
       granularity: {
-        title: 'Select text by words',
+        title: 'انتخاب متن بر اساس کلمات',
         type: Boolean,
         param: ($obj, value) => value ? $obj.setAttribute('granularity', 'word') : $obj.removeAttribute('granularity'),
         value: $obj => $obj.getAttribute('granularity') === 'word',
@@ -110,7 +110,7 @@ const Labels = {
       },
     },
     filter: {
-      title: 'Add filter for long list of labels',
+      title: 'افزودن فیلتر برای لیست‌های حاوی کلمات زیاد',
       type: Boolean,
       control: true,
       param: ($obj, value) => {

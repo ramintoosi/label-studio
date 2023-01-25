@@ -8,7 +8,7 @@ import "./Tooltip.styl";
 export const Tooltip = forwardRef(
   ({ title, children, defaultVisible, disabled, style }, ref) => {
     if (!children || Array.isArray(children)) {
-      throw new Error("Tooltip does accept a single child only");
+      throw new Error("Tooltip فقط یک فرزند را می پذیرد");
     }
 
     const triggerElement = ref ?? useRef();

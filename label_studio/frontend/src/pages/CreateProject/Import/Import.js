@@ -281,12 +281,12 @@ export const ImportPage = ({
       <header>
         <form className={importClass.elem("url-form") + " inline"} method="POST" onSubmit={onLoadURL}>
           <input placeholder="Dataset URL" name="url" ref={urlRef} />
-          <button type="submit">Add URL</button>
+          <button type="submit">افزودن URL</button>
         </form>
-        <span>or</span>
+        <span>یا</span>
         <button onClick={() => document.getElementById('file-input').click()} className={importClass.elem("upload-button")}>
           <IconUpload width="16" height="16" className={importClass.elem("upload-icon")} />
-          Upload {files.uploaded.length ? "More " : ""}Files
+          بارگزاری {files.uploaded.length ? "More " : ""}Files
         </button>
         <div className={importClass.elem("csv-handling").mod({ highlighted: highlightCsvHandling, hidden: !csvHandling })}>
           <span>Treat CSV/TSV as</span>
@@ -307,21 +307,21 @@ export const ImportPage = ({
           {!showList && (
             <label htmlFor="file-input">
               <div className={dropzoneClass.elem("content")}>
-                <header>Drag & drop files here<br/>or click to browse</header>
+                <header>فایل را اینجا بیاندازید <br/> یا برای انتخاب کلید کنید</header>
                 <IconUpload height="64" className={dropzoneClass.elem("icon")} />
                 <dl>
-                  <dt>Text</dt><dd>txt</dd>
-                  <dt>Audio</dt><dd>wav, aiff, mp3, au, flac, m4a, ogg</dd>
-                  <dt>Video</dt><dd>mpeg4/H.264 webp, webm*</dd>
-                  <dt>Images</dt><dd>jpg, png, gif, bmp, svg, webp</dd>
+                  <dt>تکست</dt><dd>txt</dd>
+                  <dt>صوت</dt><dd>wav, aiff, mp3, au, flac, m4a, ogg</dd>
+                  <dt>ویدئو</dt><dd>mpeg4/H.264 webp, webm*</dd>
+                  <dt>تصویر</dt><dd>jpg, png, gif, bmp, svg, webp</dd>
                   <dt>HTML</dt><dd>html, htm, xml</dd>
-                  <dt>Time Series</dt><dd>csv, tsv</dd>
-                  <dt>Common Formats</dt><dd>csv, tsv, txt, json</dd>
+                  <dt>سری زمانی</dt><dd>csv, tsv</dd>
+                  <dt>فرمتهای رایج</dt><dd>csv, tsv, txt, json</dd>
                 </dl>
                 <b>
-                   * – Support depends on the browser<br/>
-                   * – Use <a href="https://labelstud.io/guide/storage.html" target="_blank">
-                  Cloud Storages</a> if you want to import a large number of files
+                   * – پشتیبانی بر اساس مرورگر<br/>
+                   * – استفاده از  <a href="https://labelstud.io/guide/storage.html" target="_blank">
+                  فضای ابری </a> اگر قصد افزودن تعداد زیادی فایل دارید
                 </b>
               </div>
             </label>

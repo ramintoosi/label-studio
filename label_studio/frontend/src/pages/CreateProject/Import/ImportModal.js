@@ -63,12 +63,12 @@ export const Inner = () => {
       bare
     >
       <Modal.Header divided>
-        <Elem block="modal" name="title">Import Data</Elem>
+        <Elem block="modal" name="title">وارد کردن دیتا</Elem>
 
         <Space>
-          <Button waiting={waiting} onClick={onCancel}>Cancel</Button>
+          <Button waiting={waiting} onClick={onCancel}>انصراف</Button>
           <Button look="primary" onClick={onFinish} waiting={waiting || uploading} disabled={uploadDisabled}>
-            Import
+            وارد کردن
           </Button>
         </Space>
       </Modal.Header>

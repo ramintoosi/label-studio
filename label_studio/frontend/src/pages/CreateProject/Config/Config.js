@@ -44,10 +44,11 @@ const configClass = cn("configure");
 
 const EmptyConfigPlaceholder = () => (
   <div className={configClass.elem("empty-config")}>
-    <p>Your labeling configuration is empty. It is required to label your data.</p>
+    <p>پیکربندی برچسب‌گذاری شما خالی است. لازم است داده های خود را برچسب گذاری کنید.</p>
     <p>
-      Start from one of our predefined templates or create your own config on the Code panel.
-      The labeling config is XML-based and you can <a href="https://labelstud.io/tags/" target="_blank">read about the available tags in our documentation</a>.
+      از یکی از قالب های از پیش تعریف شده ما شروع کنید یا پیکربندی خود را در پنل کد ایجاد کنید.
+      پیکربندی برچسب‌گذاری بر اساس xml است و شما می‌توانید   <a href="https://labelstud.io/tags/" target="_blank">
+        ویژگیهای برچسب‌ها در مستندات  ما مطالعه کنید</a>.
     </p>
   </div>
 );
@@ -68,8 +69,8 @@ const Label = ({ label, template, color }) => {
       <span>{value}</span>
       <button type="button" className={configClass.elem("delete-label")} onClick={() => template.removeLabel(label)}>
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="red" strokeWidth="2" strokeLinecap="square" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 12L12 2"/>
-          <path d="M12 12L2 2"/>
+          <path d="M2 12L12 2" />
+          <path d="M12 12L2 2" />
         </svg>
       </button>
     </li>
@@ -269,7 +270,7 @@ const ConfigureColumn = ({ template, obj, columns }) => {
         <option value="-">{"<set manually>"}</option>
       </select>
       {isManual && (
-        <input value={newValue} onChange={handleChange} onBlur={handleBlur} onKeyDown={handleKeyDown}/>
+        <input value={newValue} onChange={handleChange} onBlur={handleBlur} onKeyDown={handleKeyDown} />
       )}
     </p>
   );
@@ -370,7 +371,7 @@ const Configurator = ({ columns, config, project, template, setTemplate, onBrows
     try {
       setParserError(null);
       setTemplate(config);
-    } catch(e) {
+    } catch (e) {
       setParserError({
         detail: `Parser error`,
         validation_errors: [e.message],
@@ -393,7 +394,7 @@ const Configurator = ({ columns, config, project, template, setTemplate, onBrows
   const extra = (
     <p className={configClass.elem('tags-link')}>
       Configure the labeling interface with tags.
-      <br/>
+      <br />
       <a href="https://labelstud.io/tags/" target="_blank">See all available tags</a>
       .
     </p>
@@ -518,7 +519,7 @@ export const ConfigPage = ({
 
   return (
     <div className={wizardClass} data-mode="list" id="config-wizard">
-      {mode ==="list" && (
+      {mode === "list" && (
         <TemplatesList
           case="list"
           selectedGroup={selectedGroup}

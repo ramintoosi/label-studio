@@ -70,7 +70,7 @@ export const confirm = ({ okText, onOk, cancelText, onCancel, buttonLook, ...pro
           size="compact"
           autoFocus
         >
-          {cancelText ?? "Cancel"}
+          {cancelText ?? "انصراف"}
         </Button>
 
         <Button
@@ -81,7 +81,7 @@ export const confirm = ({ okText, onOk, cancelText, onCancel, buttonLook, ...pro
           size="compact"
           look={buttonLook ?? 'primary'}
         >
-          {okText ?? "OK"}
+          {okText ?? "اوکی"}
         </Button>
       </Space>
     ),
@@ -103,7 +103,7 @@ export const info = ({ okText, onOkPress, ...props }) => {
           look="primary"
           size="compact"
         >
-          {okText ?? "OK"}
+          {okText ?? "اوکی"}
         </Button>
       </Space>
     ),

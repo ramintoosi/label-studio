@@ -149,7 +149,7 @@ export const ExportPage = () => {
 
         history.replace(`${path}${search !== '?' ? search : ''}`);
       }}
-      title="Export data"
+      title="خروجی گرفتن از دیتا"
       style={{ width: 720 }}
       closeOnClickOutside={false}
       allowClose={!downloading}
@@ -183,7 +183,7 @@ export const ExportPage = () => {
             <Elem name="actions">
               <Space>
                 {downloadingMessage && (
-                  "Files are being prepared. It might take some time."
+                  "فایلها در حال اماده سازی هستند. It might take some time."
                 )}
                 <Elem
                   tag={Button}
@@ -206,7 +206,7 @@ export const ExportPage = () => {
 const FormatInfo = ({ availableFormats, selected, onClick }) => {
   return (
     <Block name="formats">
-      <Elem name="info">You can export dataset in one of the following formats:</Elem>
+      <Elem name="info">شما می‌توانید مجموعه داده را در فرمتهای زیر خروجی بگیرید:</Elem>
       <Elem name="list">
         {availableFormats.map(format => (
           <Elem
@@ -233,7 +233,7 @@ const FormatInfo = ({ availableFormats, selected, onClick }) => {
         ))}
       </Elem>
       <Elem name="feedback">
-        Can't find an export format?
+        نمیتوانید فرمتی را پیدا کنید?
         <br/>
         Please let us know in <a className="no-go" href="https://slack.labelstudio.heartex.com/?source=product-export">Slack</a> or submit an issue to the <a className="no-go" href="https://github.com/heartexlabs/label-studio-converter/issues">Repository</a>
       </Elem>

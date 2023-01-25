@@ -24,5 +24,5 @@ export const CopyableTooltip = forwardRef(({ children, title, textForCopy, ...re
     onClick: clickHandler,
   });
 
-  return <Tooltip title={copied ? "Copied!" : title} onClick={clickHandler} {...restProps} children={clone}/>;
+  return <Tooltip title={copied ? "کپی شد!" : title} onClick={clickHandler} {...restProps} children={clone}/>;
 });

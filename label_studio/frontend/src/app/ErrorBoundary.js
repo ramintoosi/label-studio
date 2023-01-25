@@ -39,9 +39,9 @@ export default class ErrorBoundary extends Component {
         <Modal onHide={() => location.reload()} style={{ width: "60vw" }} visible bare>
           <div style={{padding: 40}}>
             <ErrorWrapper
-              title="Runtime error"
+              title="خطای زمان اجرا"
               message={error}
-              stacktrace={`${errorInfo ? `Component Stack: ${errorInfo}` : ''}\n\n${this.state.error?.stack ?? ''}`}
+              stacktrace={`${errorInfo ? `پشته کامپننت‌ها: ${errorInfo}` : ''}\n\n${this.state.error?.stack ?? ''}`}
               onGoBack={goBack}
               onReload={() => location.reload()}
             />
@@ -69,7 +69,7 @@ export const ErrorUI = () => {
 
   return context.hasError && (
     <div className="error">
-      Error occurred
+      خطایی رخ داده
     </div>
   );
 };

@@ -214,7 +214,7 @@ export const Pagination: FC<PaginationProps> = forwardRef(({
                 if (allowInput) setInputMode(true);
               }}
             >
-              {currentPage}{" "}<span>of {totalPages}</span>
+              {currentPage}{" "}<span>از {totalPages}</span>
               <div onClick={() => { /*  */ }}></div>
             </Elem>
           )}
@@ -240,7 +240,7 @@ export const Pagination: FC<PaginationProps> = forwardRef(({
         <Elem name="page-size">
           <Select
             value={pageSize}
-            options={pageSizeOptions.map(v => ({ label: `${v} per page`, value: v }))}
+            options={pageSizeOptions.map(v => ({ label: `${v} در صفحه`, value: v }))}
             onChange={(e: any) => {
               const newPageSize = parseInt(e.target.value);
 

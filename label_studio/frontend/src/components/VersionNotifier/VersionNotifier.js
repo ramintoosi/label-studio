@@ -58,10 +58,10 @@ export const VersionNotifier = ({ showNewVersion, showCurrentVersion }) => {
         </Elem>
         <Elem name="content">
           <Elem name="title" data-date={updateTime}>
-            {latestVersion} Available
+            {latestVersion} در دسترس
           </Elem>
           <Elem name="description">
-            Current version: {version}
+            نسخه جاری: {version}
           </Elem>
         </Elem>
       </a>

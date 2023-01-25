@@ -31,9 +31,9 @@ const loadAsyncPage = async (url) => {
         modal({
           body: () => (
             <ErrorWrapper
-              title={`Error ${response.status}: ${response.statusText}`}
+              title={`خطا ${response.status}: ${response.statusText}`}
               errorId={response.status}
-              stacktrace={`Cannot load url ${url}\n\n${html}`}
+              stacktrace={`url بارگزاری نمی‌شود ${url}\n\n${html}`}
             />
           ),
           allowClose: false,
@@ -50,8 +50,8 @@ const loadAsyncPage = async (url) => {
       body: () => (
         <ErrorWrapper
           possum={false}
-          title={"Connection refused"}
-          message={"Server not responding. Is it still running?"}
+          title={"ارتباط رد شد"}
+          message={"سرور پاسخ نمی‌دهد. آیا در حال اجراست؟"}
         />
       ),
       simple: true,

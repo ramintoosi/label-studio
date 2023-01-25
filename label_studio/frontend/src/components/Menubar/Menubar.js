@@ -211,7 +211,7 @@ export const Menubar = ({
                   target="_blank"
                 />
                 <Menu.Item
-                  label="Docs"
+                  label="مستندات"
                   href="https://labelstud.io/guide"
                   icon={<IconBook/>}
                   target="_blank"
@@ -239,7 +239,7 @@ export const Menubar = ({
                   onClick={sidebarPin}
                   active={sidebarPinned}
                 >
-                  {sidebarPinned ?  "Unpin menu" : "Pin menu"}
+                  {sidebarPinned ?  "باز کردن منو" : "سنجاق کردن منو"}
                 </Menu.Item>
 
               </Menu>

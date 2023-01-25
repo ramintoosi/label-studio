@@ -77,15 +77,15 @@ export const ErrorWrapper = ({title, message, errorId, stacktrace, validation, v
       <Elem name="actions">
         <Space spread>
           <Elem tag={Button} name="action-slack" target="_blank" icon={<LsSlack/>} href={SLACK_INVITE_URL}>
-            Ask on Slack
+            در Slack بپرسید
           </Elem>
 
           <Space size="small">
             {preparedStackTrace && <Button disabled={copied} onClick={copyStacktrace} style={{width: 180}}>
-              {copied ? "Copied" : "Copy Stacktrace"}
+              {copied ? "کپی شد" : "کپی کردن پشته کاری"}
             </Button>}
-            {onGoBack && <Button onClick={onGoBack}>Go Back</Button>}
-            {onReload && <Button onClick={onReload}>Reload</Button>}
+            {onGoBack && <Button onClick={onGoBack}>بازگشت</Button>}
+            {onReload && <Button onClick={onReload}>بازنشانی</Button>}
           </Space>
         </Space>
       </Elem>
