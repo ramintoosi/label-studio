@@ -28,7 +28,7 @@ export const MenuLayout = ({children, ...routeProps}) => {
 };
 
 export const SettingsPage = {
-  title: "Settings",
+  title: "تنظیمات",
   path: "/settings",
   exact: true,
   layout: MenuLayout,
