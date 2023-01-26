@@ -63,3 +63,13 @@
        url('roboto-v20-latin_cyrillic-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('roboto-v20-latin_cyrillic-500italic.svg#Roboto') format('svg'); /* Legacy iOS */
 }
+@font-face {
+  font-family: "ZarBold";
+  font-style: bold;
+  src: url("B Zar Bold.ttf");
+}
+@font-face {
+  font-family: "Zar";
+  font-style: normal;
+  src: url("B Zar.ttf");
+}
