@@ -9,7 +9,7 @@
   >
     {% csrf_token %}
     <div>
-      <input type="text" class="ls-input" name="email" id="email" placeholder="Email" value="{{ form.data.email }}">
+      <input type="text" class="ls-input" name="email" id="email" placeholder="ایمیل" value="{{ form.data.email }}">
       {% if user_form.errors.email %}
         <ul class="field_errors">
           {% for error in user_form.errors.email %}
@@ -19,7 +19,7 @@
       {% endif %}
       </div>
     <div>
-      <input type="password" class="ls-input" name="password" id="password" placeholder="Password">
+      <input type="password" class="ls-input" name="password" id="password" placeholder="رمز عبور">
       {% if user_form.errors.password %}
         <ul class="field_errors">
           {% for error in user_form.errors.password %}
@@ -29,7 +29,7 @@
       {% endif %}
       </div>
 
-    <div>
+    {% comment %} <div>
       <input name="allow_newsletters" id="allow_newsletters" type="hidden" value="true">
       <label for="allow_newsletters_visual" style="display: inline-block; cursor: pointer;">
 
@@ -41,7 +41,7 @@
              width="25" style="display: inline; margin: 0; position: relative; top: 5px; left: 0px">
 
       </label>
-    </div>
+    </div> {% endcomment %}
 
     {% if form.non_field_errors %}
       {% for error in form.non_field_errors %}
