@@ -24,8 +24,8 @@ export const GeneralSettings = () => {
   ];
 
   const samplings = [
-    {value: "Sequential", label: "Sequential", description: "Tasks are ordered by Data manager ordering"},
-    {value: "Uniform", label: "Random", description: "Tasks are chosen with uniform random"},
+    {value: "Sequential", label: "متوالی", description: "وظایف بر اساس ترتیب تاریخ مدیریت داده مرتب شده است"},
+    {value: "Uniform", label: "تصادفی", description: "وظایف با تصادفی یکنواخت انتخاب می‌شوند"},
   ];
 
   return (
@@ -39,18 +39,18 @@ export const GeneralSettings = () => {
         <Form.Row columnCount={1} rowGap="32px">
           <Input
             name="title"
-            label="Project Name"
+            label="نام پروژه"
             labelProps={{large: true}}
           />
 
           <TextArea
             name="description"
-            label="Description"
+            label="توضیحات"
             labelProps={{large: true}}
             style={{minHeight: 128}}
           />
 
-          <RadioGroup name="color" label="Color" size="large" labelProps={{size: "large"}}>
+          <RadioGroup name="color" label="رنگ" size="large" labelProps={{size: "large"}}>
             {colors.map(color => (
               <RadioGroup.Button key={color} value={color}>
                 <Block name="color" style={{'--background': color}}/>
@@ -58,12 +58,12 @@ export const GeneralSettings = () => {
             ))}
           </RadioGroup>
 
-          <RadioGroup label="Task Sampling" labelProps={{size: "large"}} name="sampling" simple>
+          <RadioGroup label="نمونه کار" labelProps={{size: "large"}} name="sampling" simple>
             {samplings.map(({value, label, description}) => (
               <RadioGroup.Button
                 key={value}
                 value={`${value} sampling`}
-                label={`${label} sampling`}
+                label={`نمونه برداری ${label}`}
                 description={description}
               />
             ))}
@@ -72,9 +72,9 @@ export const GeneralSettings = () => {
 
         <Form.Actions>
           <Form.Indicator>
-            <span case="success">Saved!</span>
+            <span case="success">ذخیره شد!</span>
           </Form.Indicator>
-          <Button type="submit" look="primary" style={{width: 120}}>Save</Button>
+          <Button type="submit" look="primary" style={{width: 120}}>ذخیره</Button>
         </Form.Actions>
       </Form>
     </div>

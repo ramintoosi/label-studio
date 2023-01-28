@@ -64,12 +64,14 @@
        url('roboto-v20-latin_cyrillic-500italic.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 @font-face {
+  font-weight: 500;
   font-family: "ZarBold";
   font-style: bold;
-  src: url("B Zar Bold.ttf");
+  src: url("B Zar Bold.ttf") format('truetype');
 }
 @font-face {
+  font-weight: 400;
   font-family: "Zar";
   font-style: normal;
-  src: url("B Zar.ttf");
+  src: url("B Zar.ttf") format('truetype');
 }
