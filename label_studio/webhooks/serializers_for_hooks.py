@@ -9,7 +9,7 @@ class OnlyIDWebhookSerializer(serializers.Serializer):
     id = serializers.IntegerField()
 
     class Meta:
-        fields: ('id',)
+        fields: ('id')
 
 
 class ProjectWebhookSerializer(serializers.ModelSerializer):
