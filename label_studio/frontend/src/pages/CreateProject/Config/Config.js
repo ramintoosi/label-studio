@@ -404,8 +404,8 @@ const Configurator = ({ columns, config, project, template, setTemplate, onBrows
     <div className={configClass}>
       <div className={configClass.elem("container")}>
         <header>
-          <button onClick={onBrowse}>Browse Templates</button>
-          <ToggleItems items={{ code: "Code", visual: "Visual" }} active={configure} onSelect={onSelect} />
+          <button onClick={onBrowse}>مرور الگوها</button>
+          <ToggleItems items={{ code: "کد", visual: "بصری" }} active={configure} onSelect={onSelect} />
         </header>
         <div className={configClass.elem('editor')}>
           {configure === "code" && (
@@ -432,7 +432,7 @@ const Configurator = ({ columns, config, project, template, setTemplate, onBrows
         {disableSaveButton !== true && onSaveClick && (
           <Form.Actions size="small" extra={configure === "code" && extra} valid>
             <Button look="primary" size="compact" style={{ width: 120 }} onClick={onSave} waiting={waiting}>
-              {waiting ? "Saving..." : "Save"}
+              {waiting ? "در حال ذخیره..." : "ذخیره"}
             </Button>
           </Form.Actions>
         )}

@@ -32,5 +32,5 @@ export const StorageSettings = () => {
   );
 };
 
-StorageSettings.title = "Cloud Storage";
+StorageSettings.title = "فضای ابری";
 StorageSettings.path = "/storage";

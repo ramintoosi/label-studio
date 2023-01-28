@@ -191,5 +191,5 @@ export const MachineLearningSettings = () => {
   );
 };
 
-MachineLearningSettings.title = "Machine Learning";
+MachineLearningSettings.title = "یادگیری ماشین";
 MachineLearningSettings.path = "/ml";
