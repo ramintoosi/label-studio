@@ -191,7 +191,7 @@ DataManagerPage.context = ({ dmRef }) => {
   const [mode, setMode] = useState(dmRef?.mode ?? "explorer");
 
   const links = {
-    '/settings': 'Settings',
+    '/settings': 'تنظیمات',
   };
 
   const updateCrumbs = (currentMode) => {
