@@ -72,5 +72,5 @@ export const LabelingSettings = () => {
   );
 };
 
-LabelingSettings.title = "Labeling Interface";
+LabelingSettings.title = "واسط برچسب‌گزاری";
 LabelingSettings.path = "/labeling";

@@ -192,7 +192,7 @@ export const ExportPage = () => {
                   onClick={proceedExport}
                   waiting={downloading}
                 >
-                  Export
+                  خروجی
                 </Elem>
               </Space>
             </Elem>

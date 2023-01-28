@@ -49,8 +49,8 @@ export const StorageCard = ({
       extra={(
         <Dropdown.Trigger align="right" content={(
           <Menu size="compact" style={{ width: 110 }}>
-            <Menu.Item onClick={() => onEditStorage(storageData)}>Edit</Menu.Item>
-            <Menu.Item onClick={() => onDeleteStorage(storageData)}>Delete</Menu.Item>
+            <Menu.Item onClick={() => onEditStorage(storageData)}>ویرایش</Menu.Item>
+            <Menu.Item onClick={() => onDeleteStorage(storageData)}>حذف</Menu.Item>
           </Menu>
         )}>
           <Button type="link" style={{ width: 32, height: 32, marginRight: -10 }} icon={<FaEllipsisV/>}/>

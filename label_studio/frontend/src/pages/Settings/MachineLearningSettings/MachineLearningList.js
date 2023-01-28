@@ -63,8 +63,8 @@ const BackendCard = ({ backend, onStartTrain, onEdit, onDelete }) => {
 
         <Dropdown.Trigger align="right" content={(
           <Menu size="small">
-            <Menu.Item onClick={() => onEdit(backend)}>Edit</Menu.Item>
-            <Menu.Item onClick={() => confirmDelete(backend)}>Delete</Menu.Item>
+            <Menu.Item onClick={() => onEdit(backend)}>ویرایش</Menu.Item>
+            <Menu.Item onClick={() => confirmDelete(backend)}>حذف</Menu.Item>
           </Menu>
         )}>
           <Button type="link" icon={<FaEllipsisV/>}/>
@@ -102,11 +102,11 @@ const BackendState = ({ backend }) => {
     <div className={cn('ml').elem('status')}>
       <span className={cn('ml').elem('indicator').mod({ state })}></span>
       <Oneof value={state} className={cn('ml').elem('status-label')}>
-        <span case="DI">Disconnected</span>
-        <span case="CO">Connected</span>
-        <span case="ER">Error</span>
-        <span case="TR">Training</span>
-        <span case="PR">Predicting</span>
+        <span case="DI">قطع شده</span>
+        <span case="CO">متصل</span>
+        <span case="ER">خطا</span>
+        <span case="TR">در حال آموزش</span>
+        <span case="PR">در حال پیش‌بینی</span>
       </Oneof>
     </div>
   );

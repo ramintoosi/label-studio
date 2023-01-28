@@ -45,5 +45,5 @@ export const InstructionsSettings = () => {
   );
 };
 
-InstructionsSettings.title = "Instructions";
+InstructionsSettings.title = "دستورالعمل‌ها";
 InstructionsSettings.path = "/instruction";

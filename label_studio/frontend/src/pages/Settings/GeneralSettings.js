@@ -81,6 +81,6 @@ export const GeneralSettings = () => {
   );
 };
 
-GeneralSettings.menuItem = "General";
+GeneralSettings.menuItem = "عمومی";
 GeneralSettings.path = "/";
 GeneralSettings.exact = true;
