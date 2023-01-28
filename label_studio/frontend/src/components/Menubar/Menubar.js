@@ -137,14 +137,14 @@ export const Menubar = ({
             <Menu>
               <Menu.Item
                 icon={<LsSettings/>}
-                label="Account &amp; Settings"
+                label="اکانت و تنظیمات"
                 href="/user/account"
                 data-external
               />
               {/* <Menu.Item label="Dark Mode"/> */}
               <Menu.Item
                 icon={<LsDoor/>}
-                label="Log Out"
+                label="خروج"
                 href={absoluteURL("/logout")}
                 data-external
               />
@@ -156,7 +156,7 @@ export const Menubar = ({
                     href="/user/account"
                     data-external
                   >
-                    <span>Please check new notification settings in the Account & Settings page</span>
+                    <span>لطفا پیامهای جدید تنظیمات را در صفحه اکانت و تنظیمات بررسی کنید</span>
                     <span className={cn("newsletter-menu-badge")} />
                   </Menu.Item>
                 </>

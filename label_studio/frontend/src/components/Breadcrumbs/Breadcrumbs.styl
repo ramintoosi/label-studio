@@ -11,6 +11,7 @@
     margin 0
     padding 0
     direction ltr
+    flex-direction row-reverse
 
   &__item
     font-family Roboto
@@ -37,9 +38,9 @@
     text-decoration none
 
   &__item + &__item
-    margin-left 30px
+    margin-right 30px
 
-  &__item + &__item::before
+  &__item + &__item::after
     top 50%
     right 100%
     width 30px
