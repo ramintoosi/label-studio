@@ -23,7 +23,7 @@ declare type APIProject = {
   /** Allow annotators to submit empty annotations */
   enable_empty_annotation?: boolean;
 
-  /** Show annotation history to annotator */
+  /** مشاهده تاریخچه یادداشت گذاری to annotator */
   show_annotation_history?: boolean;
   organization?: number | null;
   color?: string | null;

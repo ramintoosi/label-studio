@@ -20,7 +20,7 @@ If you need to perform semantic segmentation on images using polygons, use this 
 
 ```html
 <View>
-  <Header value="Select label and click the image to start"/>
+  <Header value="برچسب را انتخاب و برای شروع روی تصویر کلیک کنید"/>
   <Image name="image" value="$image" zoom="true"/>
   <PolygonLabels name="label" toName="image"
                  strokeWidth="3" pointSize="small"
@@ -37,7 +37,7 @@ All labeling configurations must be wrapped in [View](/tags/view.html) tags.
 
 You can add a [header](/tags/header.html) to provide instructions to the annotator:
 ```xml
-<Header value="Select label and click the image to start"/>
+<Header value="برچسب را انتخاب و برای شروع روی تصویر کلیک کنید"/>
 ```
 
 Use the [Image](/tags/image.html) object tag to specify the image data and allow annotators to zoom the image:
