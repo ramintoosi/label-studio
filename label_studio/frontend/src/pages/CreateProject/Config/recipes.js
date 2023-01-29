@@ -22,7 +22,7 @@ export const recipes = [
     image: "polygon.png",
     details: ``,
     config: `<View>
-  <Header value="Select label and click on image to start"/>
+  <Header value="برچسب را انتخاب و برای شروع روی تصویر کلیک کنید"/>
   <Image name="image" value="$image"/>
   <PolygonLabels name="label" toName="image"
                  strokeWidth="3" pointSize="small"
