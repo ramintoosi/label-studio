@@ -12,11 +12,11 @@ config: |
       <Choices name="dynamic_choices" toName="text" selection="checkbox" value="$options" layout="vertical" choice="multiple" allownested="true"/>
     </View>
     <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 1em; border-radius: 5px;">
-      <Header value="Search Quality"/>
+      <Header value="کیفیت جستجو"/>
       <Rating name="relevance" toName="text"/>
     </View>
     <View style="box-shadow: 2px 2px 5px #999; padding: 15px 5px 10px 20px; margin-top: 1.5em; margin-bottom: 1.25em; border-radius: 5px; display: flex; align-items: center;">
-      <Header value="Labeling Confidence" style="font-size: 1.25em"/>
+      <Header value="کیفیت برچسب‌گزاری" style="font-size: 1.25em"/>
       <View style="margin: 0 1em 0.5em 1.5em">
         <Choices name="confidence" toName="text" choice="single" showInLine="true">
           <Choice value="Low" html="&lt;img width='40' src='https://www.iconsdb.com/icons/preview/green/thumbs-up-xxl.png'/&gt;"/>

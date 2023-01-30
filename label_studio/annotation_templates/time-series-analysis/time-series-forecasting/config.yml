@@ -6,9 +6,9 @@ details: <h1>Prepare training data for time series forecasting models</h1>
 config: |
   <View>
       <!-- Control tag for region labels -->
-      <Header value="Select predictable region spans in time series:"/>
+      <Header value="گستره های منطقه قابل پیش بینی را در سری های زمانی انتخاب کنید:"/>
       <TimeSeriesLabels name="predictable" toName="stock">
-          <Label value="Regions" background="red" />
+          <Label value="مناطق" background="red" />
       </TimeSeriesLabels>
 
       <!-- Object tag for time series data source -->
@@ -24,7 +24,7 @@ config: |
                    strokeColor="#1f77b4"
                    legend="Stock Value"/>
       </TimeSeries>
-      <Header value="Forecast next trend:"/>
+      <Header value="پیش‌بینی روند بعدی"/>
       <Choices name="trend_forecast" toName="stock">
           <Choice value="Up"/>
           <Choice value="Down"/>

@@ -996,8 +996,8 @@ stages:
         <Header value="Rate this article"/>
         <Rating name="rating" toName="pdf" maxRating="10" icon="star" size="medium" />
         <Choices name="choices" choice="single-radio" toName="pdf" showInline="true">
-          <Choice value="Important article"/>
-          <Choice value="Yellow press"/>
+          <Choice value="مقاله مهم"/>
+          <Choice value="نشریان زرد"/>
         </Choices>
         <HyperText name="pdf" value="$pdf" inline="true"/>
       </View>
