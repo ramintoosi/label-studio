@@ -10,7 +10,7 @@ config: |
     <View style="box-shadow: 2px 2px 5px #999;
                  padding: 20px; margin-top: 2em;
                  border-radius: 5px;">
-      <Header value="Choose text sentiment"/>
+      <Header value="احساسات متن را انتخاب کنید"/>
       <Choices name="sentiment" toName="text"
                choice="single" showInLine="true">
         <Choice value="Positive"/>

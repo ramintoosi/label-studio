@@ -15,7 +15,7 @@ config: |
           <Label value="Amount" background="red"/>
         </RectangleLabels>
         <View style="display: flex; justify-content: center;">
-          <Header value="به این صفحه امتیاز بدهید۲:"/>
+          <Header value="به این صفحه امتیاز بدهید:"/>
           <Rating name="rating_{{idx}}" toName="page_{{idx}}"/>
         </View>
     </Repeater>

@@ -12,7 +12,7 @@ config: |
 
     <AudioPlus name="audio" value="$audio"/>
 
-    <TextArea name="transcription" toName="audio"
+    <TextArea name="رونویسی" toName="audio"
               rows="2" editable="true"
               perRegion="true" required="true" />
   </View>

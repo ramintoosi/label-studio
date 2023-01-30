@@ -6,8 +6,8 @@ details: <h1>Write text describing the image</h1>
 config: |
   <View>
     <Image name="image" value="$captioning"/>
-    <Header value="Describe the image:"/>
-    <TextArea name="caption" toName="image" placeholder="Enter description here..."
+    <Header value="تصویر را شرح دهید:"/>
+    <TextArea name="caption" toName="image" placeholder="شرح تصویر را اینجا وارد کنید..."
               rows="5" maxSubmissions="1"/>
   </View>
 

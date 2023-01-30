@@ -2,13 +2,13 @@ title: Text Summarization
 type: community
 group: Natural Language Processing
 image: /static/templates/text-summarization.png
-details: <h1>Provide one sentence summary</h1>
+details: <h1>در یک جمله خلاصه را بنویسید</h1>
 config: |
   <View>
-    <Header value="Please read the text" />
+    <Header value="لطفا متن زیر را بخوانید" />
     <Text name="text" value="$text" />
 
-    <Header value="Provide one sentence summary" />
+    <Header value="در یک جمله خلاصه را بنویسید" />
     <TextArea name="answer" toName="text"
               showSubmitButton="true" maxSubmissions="1" editable="true"
               required="true" />
